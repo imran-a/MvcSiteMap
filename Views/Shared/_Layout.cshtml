@@ -1,0 +1,26 @@
+﻿@{
+    var sm = Html.MvcSiteMap();
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <span>main nav:</span>
+            @sm.Menu(false, true, false)
+        </nav>
+
+        <div class="breadcrumbs">
+            <span>breadcrumb :</span>
+            @Html.MvcSiteMap().SiteMapPath()
+        </div>
+
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MvcSiteMap.Domain.NewsItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    <p><a href="@item.Url">@item.Title</a></p>
+}
