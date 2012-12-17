@@ -11,6 +11,8 @@ MvcSiteMap
 
 5) Reload the page in browser and notice the menus have disappeared  
 
+If that doesn't work, try it a couple of times.. 
+
 -- 
 
 To bring the menus back, rebuild the project and navigate to home page
